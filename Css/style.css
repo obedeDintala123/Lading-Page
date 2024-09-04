@@ -1,0 +1,135 @@
+@import url('../fonte/Poppins/Poppins.css');
+
+:root{
+    --primary-color:#fff;
+    --secondary-color:#eeeeee;
+    --button-bg:#cf1113;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background:var(--secondary-color);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background: var(--primary-color);
+    box-shadow: 0 0 4px #000;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: #868697;
+    position: relative;
+    transition: .4s ease-in-out;
+}
+
+.link:hover{
+    color: #000;
+}
+
+.link::after{
+    content: '';
+    height: 2.5px;
+    background: var(--button-bg);
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: .4s ease-in-out;
+}
+
+.link:hover::after{
+    width: 100%;
+}
+
+.button-header{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+    background: var(--button-bg);
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+.button-header:hover{
+    background: #a30c0e;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-content{
+    width: 500px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titule-section{
+    font-size: 70px;
+    font-weight: 500;
+    color: #38363f;
+    line-height: 90px;
+}
+
+.text-content p{
+    color: #868697;
+}
+
+.button-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.button-content button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background: var(--button-bg);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.watch{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.watch a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
